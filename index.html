@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yenly - お金管理を、もっとシンプルに。収入・支出・ポイントを一つのアプリで簡単管理。">
+    <meta name="keywords" content="Yenly, 家計簿, 支出管理, ポイント管理, 個人財務">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Yenly - お金管理を、もっとシンプルに。">
+    <meta property="og:description" content="収入・支出・ポイントを一つのアプリで簡単管理">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:locale:alternate" content="en_US">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Yenly - お金管理を、もっとシンプルに。">
+    <meta name="twitter:description" content="収入・支出・ポイントを一つのアプリで簡単管理">
+    
+    <title>Yenly - お金管理を、もっとシンプルに。</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="logo.svg" alt="Yenly" class="logo-image">
+                </div>
+                <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+                    <span class="lang-option active" data-lang="ja">日本語</span>
+                    <span class="lang-separator">/</span>
+                    <span class="lang-option" data-lang="en">English</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title" data-ja="お金管理を、もっとシンプルに。" data-en="Money management, made simpler.">
+                        お金管理を、もっとシンプルに。
+                    </h1>
+                    <p class="hero-subtitle" data-ja="収入・支出・ポイントを一つのアプリで簡単管理" data-en="Manage income, expenses, and points all in one simple app">
+                        収入・支出・ポイントを一つのアプリで簡単管理
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#download" class="btn btn-primary" data-ja="無料で始める" data-en="Get Started Free">
+                            無料で始める
+                        </a>
+                        <a href="#features" class="btn btn-secondary" data-ja="詳細を見る" data-en="Learn More">
+                            詳細を見る
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="phone-mockup">
+                        <div class="phone-screen">
+                            <div class="mockup-content">
+                                <div class="mockup-header"></div>
+                                <div class="mockup-chart"></div>
+                                <div class="mockup-cards">
+                                    <div class="mockup-card"></div>
+                                    <div class="mockup-card"></div>
+                                    <div class="mockup-card"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title" data-ja="主な機能" data-en="Key Features">
+                主な機能
+            </h2>
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">📝</div>
+                    <h3 class="feature-title" data-ja="簡単な支出管理" data-en="Easy Expense Tracking">
+                        簡単な支出管理
+                    </h3>
+                    <p class="feature-description" data-ja="日々の支出を簡単に記録。カテゴリ別に整理して、お金の流れを一目で把握できます。" data-en="Record daily expenses effortlessly. Organize by category and see your money flow at a glance.">
+                        日々の支出を簡単に記録。カテゴリ別に整理して、お金の流れを一目で把握できます。
+                    </p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">📊</div>
+                    <h3 class="feature-title" data-ja="月別サマリー" data-en="Monthly Summary">
+                        月別サマリー
+                    </h3>
+                    <p class="feature-description" data-ja="毎月の収支を自動集計。グラフで視覚的に確認し、家計の改善点を見つけやすくします。" data-en="Automatic monthly income and expense summaries. Visualize with charts to easily identify areas for improvement.">
+                        毎月の収支を自動集計。グラフで視覚的に確認し、家計の改善点を見つけやすくします。
+                    </p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🎁</div>
+                    <h3 class="feature-title" data-ja="ポイント一括管理" data-en="Unified Points Management">
+                        ポイント一括管理
+                    </h3>
+                    <p class="feature-description" data-ja="楽天、PayPay、dポイント、Pontaなど、すべてのポイントを一箇所で管理。期限切れを防ぎます。" data-en="Manage all your points in one place - Rakuten, PayPay, dポイント, Ponta, and more. Never miss an expiration date.">
+                        楽天、PayPay、dポイント、Pontaなど、すべてのポイントを一箇所で管理。期限切れを防ぎます。
+                    </p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🔔</div>
+                    <h3 class="feature-title" data-ja="請求書リマインダー" data-en="Bill Reminders">
+                        請求書リマインダー
+                    </h3>
+                    <p class="feature-description" data-ja="支払い期限を忘れないよう、リマインダーで通知。期日を守って、安心してお金を管理できます。" data-en="Never miss a payment deadline with smart reminders. Stay on top of your bills and manage money with peace of mind.">
+                        支払い期限を忘れないよう、リマインダーで通知。期日を守って、安心してお金を管理できます。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy & Trust Section -->
+    <section class="privacy">
+        <div class="container">
+            <div class="privacy-content">
+                <div class="privacy-icon">🛡️</div>
+                <h2 class="privacy-title" data-ja="100% プライバシー保護" data-en="100% Privacy Protected">
+                    100% プライバシー保護
+                </h2>
+                <ul class="privacy-list">
+                    <li class="privacy-item" data-ja="銀行口座連携なし" data-en="No bank account linking">
+                        銀行口座連携なし
+                    </li>
+                    <li class="privacy-item" data-ja="アカウント連携不要" data-en="No account linking required">
+                        アカウント連携不要
+                    </li>
+                    <li class="privacy-item" data-ja="すべて手動入力で安心" data-en="All manual entry for peace of mind">
+                        すべて手動入力で安心
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title" data-ja="使い方" data-en="How It Works">
+                使い方
+            </h2>
+            <div class="steps">
+                <div class="step fade-in">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title" data-ja="アプリをインストール" data-en="Install the App">
+                        アプリをインストール
+                    </h3>
+                    <p class="step-description" data-ja="Google Playから無料でダウンロード" data-en="Download for free from Google Play">
+                        Google Playから無料でダウンロード
+                    </p>
+                </div>
+                <div class="step fade-in">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title" data-ja="収入・支出を入力" data-en="Enter Income & Expenses">
+                        収入・支出を入力
+                    </h3>
+                    <p class="step-description" data-ja="シンプルな画面で簡単に入力" data-en="Easy input with a simple interface">
+                        シンプルな画面で簡単に入力
+                    </p>
+                </div>
+                <div class="step fade-in">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title" data-ja="毎月のお金を可視化" data-en="Visualize Monthly Finances">
+                        毎月のお金を可視化
+                    </h3>
+                    <p class="step-description" data-ja="グラフとサマリーで家計を把握" data-en="Understand your finances with charts and summaries">
+                        グラフとサマリーで家計を把握
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Screenshots Section -->
+    <section class="screenshots">
+        <div class="container">
+            <h2 class="section-title" data-ja="アプリの画面" data-en="App Screenshots">
+                アプリの画面
+            </h2>
+            <div class="screenshots-grid">
+                <div class="screenshot-card fade-in">
+                    <div class="screenshot-placeholder">
+                        <div class="screenshot-label" data-ja="ホームダッシュボード" data-en="Home Dashboard">
+                            ホームダッシュボード
+                        </div>
+                    </div>
+                </div>
+                <div class="screenshot-card fade-in">
+                    <div class="screenshot-placeholder">
+                        <div class="screenshot-label" data-ja="月別サマリー" data-en="Monthly Summary">
+                            月別サマリー
+                        </div>
+                    </div>
+                </div>
+                <div class="screenshot-card fade-in">
+                    <div class="screenshot-placeholder">
+                        <div class="screenshot-label" data-ja="ポイント残高" data-en="Points Balance">
+                            ポイント残高
+                        </div>
+                    </div>
+                </div>
+                <div class="screenshot-card fade-in">
+                    <div class="screenshot-placeholder">
+                        <div class="screenshot-label" data-ja="請求書一覧" data-en="Upcoming Bills">
+                            請求書一覧
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta" id="download">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title" data-ja="今日から、安心なお金管理を始めよう" data-en="Start managing your money with peace of mind today">
+                    今日から、安心なお金管理を始めよう
+                </h2>
+                <a href="#" class="btn btn-primary btn-large" data-ja="Google Playでダウンロード（近日公開）" data-en="Download on Google Play (Coming Soon)">
+                    Google Playでダウンロード（近日公開）
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title" data-ja="お問い合わせ" data-en="Contact Us">
+                お問い合わせ
+            </h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p class="contact-email" data-ja="サポートメール" data-en="Support Email">
+                        サポートメール
+                    </p>
+                    <a href="mailto:official@yenly.in" class="contact-email-link">official@yenly.in</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="logo.svg" alt="Yenly" class="logo-image">
+                    </div>
+                    <p class="footer-tagline" data-ja="お金管理を、もっとシンプルに。" data-en="Money management, made simpler.">
+                        お金管理を、もっとシンプルに。
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4 class="footer-heading" data-ja="リンク" data-en="Links">
+                            リンク
+                        </h4>
+                        <ul class="footer-list">
+                            <li><a href="#privacy" class="footer-link" data-ja="プライバシーポリシー" data-en="Privacy Policy">プライバシーポリシー</a></li>
+                            <li><a href="#terms" class="footer-link" data-ja="利用規約" data-en="Terms of Service">利用規約</a></li>
+                            <li><a href="#contact" class="footer-link" data-ja="お問い合わせ" data-en="Contact">お問い合わせ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-lang">
+                    <button class="lang-toggle" id="footerLangToggle" aria-label="Toggle language">
+                        <span class="lang-option active" data-lang="ja">日本語</span>
+                        <span class="lang-separator">/</span>
+                        <span class="lang-option" data-lang="en">English</span>
+                    </button>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright" data-ja="© 2026 Yenly. All rights reserved." data-en="© 2026 Yenly. All rights reserved.">
+                    © 2026 Yenly. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
