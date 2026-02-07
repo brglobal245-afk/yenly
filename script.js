@@ -162,6 +162,54 @@ class SmoothScroll {
     }
 }
 
+// Copy to Clipboard Functionality
+class CopyToClipboard {
+    constructor() {
+        this.init();
+    }
+
+    init() {
+        const copyBtn = document.getElementById('copyBtn');
+        const emailElement = document.getElementById('contactEmail');
+        
+        if (copyBtn && emailElement) {
+            copyBtn.addEventListener('click', () => {
+                const email = emailElement.textContent.trim();
+                this.copyToClipboard(email, copyBtn);
+            });
+        }
+    }
+
+    async copyToClipboard(text, button) {
+        try {
+            await navigator.clipboard.writeText(text);
+            
+            // Visual feedback
+            const originalHTML = button.innerHTML;
+            button.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>';
+            button.style.background = 'var(--color-secondary)';
+            button.style.color = 'var(--color-white)';
+            
+            setTimeout(() => {
+                button.innerHTML = originalHTML;
+                button.style.background = '';
+                button.style.color = '';
+            }, 2000);
+        } catch (err) {
+            console.error('Failed to copy:', err);
+            // Fallback for older browsers
+            const textArea = document.createElement('textarea');
+            textArea.value = text;
+            textArea.style.position = 'fixed';
+            textArea.style.opacity = '0';
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textArea);
+        }
+    }
+}
+
 // Initialize everything when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize language manager
@@ -172,6 +220,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize smooth scroll
     const smoothScroll = new SmoothScroll();
+
+    // Initialize copy to clipboard
+    const copyToClipboard = new CopyToClipboard();
 
     // Add loaded class to body for any CSS transitions
     document.body.classList.add('loaded');

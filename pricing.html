@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yenly - 料金プラン。お金管理を、もっとシンプルに。">
+    <title>Yenly - 料金プラン</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="logo.svg" alt="Yenly" class="logo-image">
+                </a>
+                <nav class="nav-menu">
+                    <a href="index.html" class="nav-link" data-ja="ホーム" data-en="Home">ホーム</a>
+                    <a href="pricing.html" class="nav-link active" data-ja="料金" data-en="Pricing">料金</a>
+                    <a href="contact.html" class="nav-link" data-ja="お問い合わせ" data-en="Contact">お問い合わせ</a>
+                </nav>
+                <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+                    <span class="lang-option active" data-lang="ja">日本語</span>
+                    <span class="lang-separator">/</span>
+                    <span class="lang-option" data-lang="en">English</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Pricing Section -->
+    <section class="pricing-page">
+        <div class="container">
+            <div class="pricing-header">
+                <h1 class="page-title" data-ja="料金プラン" data-en="Pricing Plans">
+                    料金プラン
+                </h1>
+                <p class="page-subtitle" data-ja="シンプルで透明性の高い料金体系" data-en="Simple and transparent pricing">
+                    シンプルで透明性の高い料金体系
+                </p>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Monthly Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                        <h3 class="pricing-plan-name" data-ja="月額プラン" data-en="Monthly Plan">
+                            月額プラン
+                        </h3>
+                        <div class="pricing-price">
+                            <span class="price-amount">¥349</span>
+                            <span class="price-period" data-ja="/月" data-en="/month">/月</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li data-ja="無制限の支出管理" data-en="Unlimited expense tracking">無制限の支出管理</li>
+                        <li data-ja="月次・年次レポート" data-en="Monthly & yearly reports">月次・年次レポート</li>
+                        <li data-ja="カテゴリー別支出分析" data-en="Category-wise spending analysis">カテゴリー別支出分析</li>
+                        <li data-ja="日本語サポート" data-en="Japanese language support">日本語サポート</li>
+                        <li data-ja="安全なクラウド同期" data-en="Secure cloud sync">安全なクラウド同期</li>
+                        <li data-ja="広告なし" data-en="No ads">広告なし</li>
+                    </ul>
+                    <a href="#download" class="btn btn-secondary" data-ja="今すぐ始める" data-en="Get Started">
+                        今すぐ始める
+                    </a>
+                </div>
+
+                <!-- Annual Plan -->
+                <div class="pricing-card featured">
+                    <div class="pricing-badge" data-ja="年間でお得" data-en="Best Value">年間でお得</div>
+                    <div class="pricing-card-header">
+                        <h3 class="pricing-plan-name" data-ja="年間プラン" data-en="Annual Plan">
+                            年間プラン
+                        </h3>
+                        <div class="pricing-price">
+                            <span class="price-amount">¥3,500</span>
+                            <span class="price-period" data-ja="/年" data-en="/year">/年</span>
+                        </div>
+                        <p class="pricing-savings" data-ja="月額換算 ¥292（¥57/月お得）" data-en="¥292/month (Save ¥57/month)">
+                            月額換算 ¥292（¥57/月お得）
+                        </p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li data-ja="無制限の支出管理" data-en="Unlimited expense tracking">無制限の支出管理</li>
+                        <li data-ja="月次・年次レポート" data-en="Monthly & yearly reports">月次・年次レポート</li>
+                        <li data-ja="カテゴリー別支出分析" data-en="Category-wise spending analysis">カテゴリー別支出分析</li>
+                        <li data-ja="日本語サポート" data-en="Japanese language support">日本語サポート</li>
+                        <li data-ja="安全なクラウド同期" data-en="Secure cloud sync">安全なクラウド同期</li>
+                        <li data-ja="広告なし" data-en="No ads">広告なし</li>
+                    </ul>
+                    <a href="#download" class="btn btn-primary" data-ja="今すぐ始める" data-en="Get Started">
+                        今すぐ始める
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="logo.svg" alt="Yenly" class="logo-image">
+                    </div>
+                    <p class="footer-tagline" data-ja="お金管理を、もっとシンプルに。" data-en="Money management, made simpler.">
+                        お金管理を、もっとシンプルに。
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4 class="footer-heading" data-ja="リンク" data-en="Links">
+                            リンク
+                        </h4>
+                        <ul class="footer-list">
+                            <li><a href="index.html" class="footer-link" data-ja="ホーム" data-en="Home">ホーム</a></li>
+                            <li><a href="pricing.html" class="footer-link" data-ja="料金" data-en="Pricing">料金</a></li>
+                            <li><a href="contact.html" class="footer-link" data-ja="お問い合わせ" data-en="Contact">お問い合わせ</a></li>
+                            <li><a href="privacy.html" class="footer-link" data-ja="プライバシーポリシー" data-en="Privacy Policy">プライバシーポリシー</a></li>
+                            <li><a href="terms.html" class="footer-link" data-ja="利用規約" data-en="Terms of Service">利用規約</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-lang">
+                    <button class="lang-toggle" id="footerLangToggle" aria-label="Toggle language">
+                        <span class="lang-option active" data-lang="ja">日本語</span>
+                        <span class="lang-separator">/</span>
+                        <span class="lang-option" data-lang="en">English</span>
+                    </button>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright" data-ja="© 2026 Yenly. All rights reserved." data-en="© 2026 Yenly. All rights reserved.">
+                    © 2026 Yenly. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

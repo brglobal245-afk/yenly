@@ -30,9 +30,14 @@
     <header class="header">
         <div class="container">
             <div class="header-content">
-                <div class="logo">
+                <a href="index.html" class="logo">
                     <img src="logo.svg" alt="Yenly" class="logo-image">
-                </div>
+                </a>
+                <nav class="nav-menu">
+                    <a href="index.html" class="nav-link active" data-ja="ホーム" data-en="Home">ホーム</a>
+                    <a href="pricing.html" class="nav-link" data-ja="料金" data-en="Pricing">料金</a>
+                    <a href="contact.html" class="nav-link" data-ja="お問い合わせ" data-en="Contact">お問い合わせ</a>
+                </nav>
                 <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
                     <span class="lang-option active" data-lang="ja">日本語</span>
                     <span class="lang-separator">/</span>
@@ -65,15 +70,7 @@
                 <div class="hero-image">
                     <div class="phone-mockup">
                         <div class="phone-screen">
-                            <div class="mockup-content">
-                                <div class="mockup-header"></div>
-                                <div class="mockup-chart"></div>
-                                <div class="mockup-cards">
-                                    <div class="mockup-card"></div>
-                                    <div class="mockup-card"></div>
-                                    <div class="mockup-card"></div>
-                                </div>
-                            </div>
+                            <img src="home.png" alt="Yenly Home Dashboard" class="phone-screenshot">
                         </div>
                     </div>
                 </div>
@@ -197,31 +194,27 @@
             </h2>
             <div class="screenshots-grid">
                 <div class="screenshot-card fade-in">
-                    <div class="screenshot-placeholder">
-                        <div class="screenshot-label" data-ja="ホームダッシュボード" data-en="Home Dashboard">
-                            ホームダッシュボード
-                        </div>
+                    <img src="home.png" alt="ホームダッシュボード" class="screenshot-image" loading="lazy">
+                    <div class="screenshot-label" data-ja="ホームダッシュボード" data-en="Home Dashboard">
+                        ホームダッシュボード
                     </div>
                 </div>
                 <div class="screenshot-card fade-in">
-                    <div class="screenshot-placeholder">
-                        <div class="screenshot-label" data-ja="月別サマリー" data-en="Monthly Summary">
-                            月別サマリー
-                        </div>
+                    <img src="expenses.png" alt="支出管理" class="screenshot-image" loading="lazy">
+                    <div class="screenshot-label" data-ja="支出管理" data-en="Expense Management">
+                        支出管理
                     </div>
                 </div>
                 <div class="screenshot-card fade-in">
-                    <div class="screenshot-placeholder">
-                        <div class="screenshot-label" data-ja="ポイント残高" data-en="Points Balance">
-                            ポイント残高
-                        </div>
+                    <img src="points.png" alt="ポイント管理" class="screenshot-image" loading="lazy">
+                    <div class="screenshot-label" data-ja="ポイント管理" data-en="Points Management">
+                        ポイント管理
                     </div>
                 </div>
                 <div class="screenshot-card fade-in">
-                    <div class="screenshot-placeholder">
-                        <div class="screenshot-label" data-ja="請求書一覧" data-en="Upcoming Bills">
-                            請求書一覧
-                        </div>
+                    <img src="income.png" alt="収入管理" class="screenshot-image" loading="lazy">
+                    <div class="screenshot-label" data-ja="収入管理" data-en="Income Management">
+                        収入管理
                     </div>
                 </div>
             </div>
@@ -277,9 +270,11 @@
                             リンク
                         </h4>
                         <ul class="footer-list">
-                            <li><a href="#privacy" class="footer-link" data-ja="プライバシーポリシー" data-en="Privacy Policy">プライバシーポリシー</a></li>
-                            <li><a href="#terms" class="footer-link" data-ja="利用規約" data-en="Terms of Service">利用規約</a></li>
-                            <li><a href="#contact" class="footer-link" data-ja="お問い合わせ" data-en="Contact">お問い合わせ</a></li>
+                            <li><a href="index.html" class="footer-link" data-ja="ホーム" data-en="Home">ホーム</a></li>
+                            <li><a href="pricing.html" class="footer-link" data-ja="料金" data-en="Pricing">料金</a></li>
+                            <li><a href="contact.html" class="footer-link" data-ja="お問い合わせ" data-en="Contact">お問い合わせ</a></li>
+                            <li><a href="privacy.html" class="footer-link" data-ja="プライバシーポリシー" data-en="Privacy Policy">プライバシーポリシー</a></li>
+                            <li><a href="terms.html" class="footer-link" data-ja="利用規約" data-en="Terms of Service">利用規約</a></li>
                         </ul>
                     </div>
                 </div>

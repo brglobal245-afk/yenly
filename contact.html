@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yenly - お問い合わせ。お金管理を、もっとシンプルに。">
+    <title>Yenly - お問い合わせ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="logo.svg" alt="Yenly" class="logo-image">
+                </a>
+                <nav class="nav-menu">
+                    <a href="index.html" class="nav-link" data-ja="ホーム" data-en="Home">ホーム</a>
+                    <a href="pricing.html" class="nav-link" data-ja="料金" data-en="Pricing">料金</a>
+                    <a href="contact.html" class="nav-link active" data-ja="お問い合わせ" data-en="Contact">お問い合わせ</a>
+                </nav>
+                <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+                    <span class="lang-option active" data-lang="ja">日本語</span>
+                    <span class="lang-separator">/</span>
+                    <span class="lang-option" data-lang="en">English</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Page -->
+    <section class="contact-page">
+        <div class="container">
+            <div class="contact-page-header">
+                <h1 class="page-title" data-ja="お問い合わせ" data-en="Contact">
+                    お問い合わせ
+                </h1>
+                <p class="page-subtitle" data-ja="いつでもお気軽にお問い合わせください" data-en="Feel free to contact us anytime">
+                    いつでもお気軽にお問い合わせください
+                </p>
+            </div>
+
+            <div class="contact-page-content">
+                <div class="contact-card">
+                    <div class="contact-email-icon">📧</div>
+                    <div class="contact-email-wrapper">
+                        <a href="mailto:official@yenly.in" class="contact-email-address" id="contactEmail">official@yenly.in</a>
+                        <button class="contact-copy-btn" id="copyBtn" aria-label="Copy email" title="Copy email">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="contact-note" data-ja="サポート、フィードバック、ビジネスに関するお問い合わせは、メールでご連絡ください。" data-en="For support, feedback, or business inquiries, please contact us via email.">
+                        サポート、フィードバック、ビジネスに関するお問い合わせは、メールでご連絡ください。
+                    </p>
+                    <div class="contact-footer-note">
+                        <p data-ja="24時間以内に返信いたします" data-en="We'll reply within 24 hours">
+                            24時間以内に返信いたします
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="logo.svg" alt="Yenly" class="logo-image">
+                    </div>
+                    <p class="footer-tagline" data-ja="お金管理を、もっとシンプルに。" data-en="Money management, made simpler.">
+                        お金管理を、もっとシンプルに。
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4 class="footer-heading" data-ja="リンク" data-en="Links">
+                            リンク
+                        </h4>
+                        <ul class="footer-list">
+                            <li><a href="index.html" class="footer-link" data-ja="ホーム" data-en="Home">ホーム</a></li>
+                            <li><a href="pricing.html" class="footer-link" data-ja="料金" data-en="Pricing">料金</a></li>
+                            <li><a href="contact.html" class="footer-link" data-ja="お問い合わせ" data-en="Contact">お問い合わせ</a></li>
+                            <li><a href="privacy.html" class="footer-link" data-ja="プライバシーポリシー" data-en="Privacy Policy">プライバシーポリシー</a></li>
+                            <li><a href="terms.html" class="footer-link" data-ja="利用規約" data-en="Terms of Service">利用規約</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-lang">
+                    <button class="lang-toggle" id="footerLangToggle" aria-label="Toggle language">
+                        <span class="lang-option active" data-lang="ja">日本語</span>
+                        <span class="lang-separator">/</span>
+                        <span class="lang-option" data-lang="en">English</span>
+                    </button>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright" data-ja="© 2026 Yenly. All rights reserved." data-en="© 2026 Yenly. All rights reserved.">
+                    © 2026 Yenly. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
